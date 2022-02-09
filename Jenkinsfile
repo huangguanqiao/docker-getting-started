@@ -5,6 +5,7 @@ pipeline {
         stage('Build Docker image') {
             steps {
                 sh 'docker build -t docker-getting-started .'
+                sh 'echo abc'
             }
         }
 
