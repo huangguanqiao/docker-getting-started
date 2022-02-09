@@ -12,6 +12,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 sh 'docker run -dp 3000:3000 docker-getting-started'
+                sh 'echo docker_success'
             }
           }
     }
